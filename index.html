@@ -8,7 +8,7 @@
 </head>
 
 <body>
-   <header class="header">
+   <div class="flex">
 
 
 
@@ -18,7 +18,7 @@
          </p>
          <ul>
             <li><a href="#article"><code class="prettycode">&lt;article&gt;</code></a></li>
-            <li><a href="#aside"><code class="prettycode">&lt;aside&gt;</code></a></li>
+            <li><a href="#asideTag"><code class="prettycode">&lt;aside&gt;</code></a></li>
             <li><a href="#details"><code class="prettycode">&lt;details&gt;</code></a></li>
             <li><a href="#figcaption"><code class="prettycode">&lt;figcaption&gt;</code></a></li>
             <li><a href="#figure"><code class="prettycode">&lt;figure&gt;</code></a></li>
@@ -100,7 +100,7 @@
                Следовательно, такую статью можно обернуть в тег
                <code class="prettycode">&lt;article&gt;</code>.
             </p>
-            <img src="./img/article.jpg" alt="Схема использования семантического элемента article">
+            <img class="img_height" src="./img/article.jpg" alt="Схема использования семантического элемента article">
             <p>
                Сами по себе новости являются достаточно уникальным элементом,
                ведь даже если их перенести на другую страницу, то они не потеряют свою актуальность.
@@ -150,18 +150,92 @@
             <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/article">Ссылка на статью в MDN Web Docs</a>,
             <br>
             <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на статью в Хекслет</a>.
+            <br>
+            <a href="https://htmlacademy.ru/blog/html/semantics">Ссылка на статью в HTML Academy</a>.
          </div>
          
 
 
-         <div class="aside">
-
+         <div class="asideTag">
+            <h3 id="asideTag" title="Aside переводиться как в стороне или дополняющие секции">
+               Элемент
+               <code class="prettycode">&lt;aside&gt;</code>
+            </h3>
+            <p>
+               Еще одним крупным контейнером для нашего контента служит тег
+               <code class="prettycode">&lt;aside&gt;</code>.
+               <br>
+               Это область с дополнительной информацией.
+               <br>
+               Подобные секции вы можете встречать в виде боковых панелей, сносок или меток.
+               <br>
+               Там содержится дополнительное меню, баннеры, реклама и другая информация.
+               <br>
+            </p>
+            <p>
+               Обратите внимание, что
+               <code class="prettycode">&lt;aside&gt;</code>
+               не обязан являться боковой панелью по внешнему виду.
+               <br>
+               Это может быть даже дополнительная информация внутри статьи.
+               <br>
+               Но чаще всего внешнее оформление у такого тега именно в виде боковой панели.
+               <br>
+               Особенности: может иметь свой заголовок. Может встречаться несколько раз на странице.
+            </p>
+            <img class="img_height" src="./img/aside.png" alt="Схема использования семантического элемента aside">
+            <br>
+            <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на статью в Хекслет</a>.
+            <br>
+            <a href="https://htmlacademy.ru/blog/html/semantics">Ссылка на статью в HTML Academy</a>.
          </div>
 
 
 
          <div class="details">
-
+            <h3 id="details">
+               Элемент
+               <code class="prettycode">&lt;details&gt;</code>
+            </h3>
+            <p>
+               Тег
+               <code class="prettycode">&lt;details&gt;</code>
+               определяет дополнительную информацию, которую пользователь может по желанию просматривать&nbsp/&nbspоткрыть или скрыть.
+            </p>
+            <p>
+               Элемент
+               <code class="prettycode">&lt;details&gt;</code>
+               может использоваться для создания интерактивного виджета,
+               который пользователь может открывать и закрывать.
+               Внутри тега
+               <code class="prettycode">&lt;details&gt;</code>
+               можно размещать любой контент.
+            </p>
+            <p>
+               Содержимое элемента
+               <code class="prettycode">&lt;details&gt;</code>
+               должно быть скрыто до тех пор, пока не будет установлен атрибут <code>open</code>.
+               <br>
+            </p>
+            <p>
+               Для определения видимого заголовка доп.информации в теге
+               <code class="prettycode">&lt;details&gt;</code>
+               используется элемент
+               <a href="#summary"><code class="prettycode">&lt;summary&gt;</code></a>.
+               <br>
+               Если первый дочерний элемент элемента
+               <code class="prettycode">&lt;details&gt;</code>
+               является
+               <a href="#summary"><code class="prettycode">&lt;summary&gt;</code></a>,
+               содержимое элемента
+               <a href="#summary"><code class="prettycode">&lt;summary&gt;</code></a>
+               используется в качестве метки для виджета раскрытия.
+            </p>
+            <img class="img_height" src="./img/details.png" alt="Схема использования семантического элемента details">
+            <br>
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/details">Ссылка на статью в MDN Web Docs</a>,
+            <br>
+            <a href="https://html5css.ru/tags/tag_details.php">Ссылка на статью в html5css.ru</a>.
          </div>
 
 
@@ -215,6 +289,7 @@
                Это отражает его семантическое назначение — разметка уникального контента.
                <br>
                При оборачивании контента в main важно не включать в него неуникальные области:
+            </p>
                <ul>
                   <li>
                      Боковое меню
@@ -229,6 +304,7 @@
                      Логотип
                   </li>
                </ul>
+            <p>
                Размещайте в
                <code class="prettycode">&lt;main&gt;</code>
                именно текстовый/графический контент.
@@ -258,6 +334,7 @@
                , как и header не является уникальным для страницы.
                <br>
                Его можно использовать для любого меню на странице, но есть несколько рекомендаций:
+            </p>
                <ul>
                   <li>
                      Нет необходимости оборачивать каждое меню в элемент
@@ -272,6 +349,7 @@
                , хотя это не запрещено.
                   </li>
                </ul>
+            <p>
                Хорошим примером дополнительного использования
                <code class="prettycode">&lt;nav&gt;</code>
                — навигация по текущей странице
@@ -317,7 +395,7 @@
                   Правильная группировка разделов — важная часть при создании доступного web'а.
                </li>
             </ul>
-            <img src="./img/section.jpg" alt="секции">
+            <img class="img_height" src="./img/section.jpg" alt="секции">
             <p>
                Для таких самостоятельных логических единиц существует специальный тег "section",
                который внутри себя может содержать одну конкретную секцию.
@@ -341,7 +419,7 @@
       </main>
 
 
-   </header>
+   </div>
    
 
 
