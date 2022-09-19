@@ -70,7 +70,8 @@
          <div class="article">
             <h3 id="article" title="Article переводиться как статья или независимые секции">
                Элемент
-               <code class="prettycode" title="Article переводиться как статья или независимые секци">&lt;article&gt;</code>
+               <code class="prettycode"
+                  title="Article переводиться как статья или независимые секци">&lt;article&gt;</code>
             </h3>
             <p>
                HTML-элемент
@@ -144,16 +145,18 @@
                А услуги размечены с помощью
                <code class="prettycode">&lt;article&gt;</code>.
                <br>
-               Они могут быть «выдернуты» из контекста, и всё равно будет понятно, 
+               Они могут быть «выдернуты» из контекста, и всё равно будет понятно,
                что это описание конкретной услуги, которую мы предлагаем.
             </p>
-            <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/article">Ссылка на статью в MDN Web Docs</a>,
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/article">Ссылка на статью в MDN Web
+               Docs</a>,
             <br>
-            <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на статью в Хекслет</a>.
+            <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на
+               статью в Хекслет</a>.
             <br>
             <a href="https://htmlacademy.ru/blog/html/semantics">Ссылка на статью в HTML Academy</a>.
          </div>
-         
+
 
 
          <div class="asideTag">
@@ -185,7 +188,8 @@
             </p>
             <img class="img_height" src="./img/aside.png" alt="Схема использования семантического элемента aside">
             <br>
-            <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на статью в Хекслет</a>.
+            <a href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Ссылка на
+               статью в Хекслет</a>.
             <br>
             <a href="https://htmlacademy.ru/blog/html/semantics">Ссылка на статью в HTML Academy</a>.
          </div>
@@ -200,7 +204,8 @@
             <p>
                Тег
                <code class="prettycode">&lt;details&gt;</code>
-               определяет дополнительную информацию, которую пользователь может по желанию просматривать&nbsp/&nbspоткрыть или скрыть.
+               определяет дополнительную информацию, которую пользователь может по желанию
+               просматривать&nbsp/&nbspоткрыть или скрыть.
             </p>
             <p>
                Элемент
@@ -290,20 +295,20 @@
                <br>
                При оборачивании контента в main важно не включать в него неуникальные области:
             </p>
-               <ul>
-                  <li>
-                     Боковое меню
-                  </li>
-                  <li>
-                     Общую навигацию для сайта
-                  </li>
-                  <li>
-                     Общую шапку и футер сайта
-                  </li>
-                  <li>
-                     Логотип
-                  </li>
-               </ul>
+            <ul>
+               <li>
+                  Боковое меню
+               </li>
+               <li>
+                  Общую навигацию для сайта
+               </li>
+               <li>
+                  Общую шапку и футер сайта
+               </li>
+               <li>
+                  Логотип
+               </li>
+            </ul>
             <p>
                Размещайте в
                <code class="prettycode">&lt;main&gt;</code>
@@ -335,20 +340,20 @@
                <br>
                Его можно использовать для любого меню на странице, но есть несколько рекомендаций:
             </p>
-               <ul>
-                  <li>
-                     Нет необходимости оборачивать каждое меню в элемент
-                     <code class="prettycode">&lt;nav&gt;</code>.
-                  </li>
-                  <li>
-                     В основном такой областью указываются только основные меню.
-                  </li>
-                  <li>
-                     Дополнительные, такие как меню в футере, не оборачивают в тег
-               <code class="prettycode">&lt;nav&gt;</code>
-               , хотя это не запрещено.
-                  </li>
-               </ul>
+            <ul>
+               <li>
+                  Нет необходимости оборачивать каждое меню в элемент
+                  <code class="prettycode">&lt;nav&gt;</code>.
+               </li>
+               <li>
+                  В основном такой областью указываются только основные меню.
+               </li>
+               <li>
+                  Дополнительные, такие как меню в футере, не оборачивают в тег
+                  <code class="prettycode">&lt;nav&gt;</code>
+                  , хотя это не запрещено.
+               </li>
+            </ul>
             <p>
                Хорошим примером дополнительного использования
                <code class="prettycode">&lt;nav&gt;</code>
@@ -405,7 +410,59 @@
 
 
          <div class="summary">
-
+            <h3 id="summary" title="Summary переводиться как сводка">
+               Элемент
+               <code class="prettycode" title="Summary переводиться как сводка">&lt;summary&gt;</code>
+            </h3>
+            <p>
+               Элемент <span title="Элемент сводки раскрытия информации в HTML - сводка">HTML Disclosure Summary element</span> 
+               <code class="prettycode">&lt;summary&gt;</code>
+               определяет сводку, заголовок или легенду для
+               <a href="#details"><code class="prettycode">&lt;details&gt;</code></a>
+               поля раскрытия элемента.
+               <br>
+               Щелчок по
+               <code class="prettycode">&lt;summary&gt;</code>
+               элементу переключает состояние родительского
+               <a href="#details"><code class="prettycode">&lt;details&gt;</code></a>
+               элемента открытым и закрытым.
+            </p>
+            <img src="./img/details.png" alt="Схема использования семантического элемента summary">
+            <p>
+               Этот элемент включает только глобальные атрибуты.
+            </p>
+            <p>
+               Элемент
+               <code class="prettycode">&lt;summary&gt;</code>
+               может быть использован в качестве элемента
+               <a href="#details"><code class="prettycode">&lt;details&gt;</code></a>.
+               <br>
+               Когда пользователь нажимает на сводку по элементу, его родитель - изменяет
+               <a href="#details"><code class="prettycode">&lt;details&gt;</code></a>
+               состояние на закрытое или закрытое на обратное,
+               и тогда элементу
+               <code>toggle</code>
+               отправляется событие
+               <a href="#details"><code class="prettycode">&lt;details&gt;</code></a>,
+               которое можно использовать, чтобы сообщить вам, когда произойдет изменение этого состояния.
+            </p>
+            <p>
+               Согласно спецификации HTML, стиль по умолчанию для
+               <code class="prettycode">&lt;summary&gt;</code>
+               элементов включает
+               <code>display: list-item</code>.
+               <br>
+               Это позволяет изменить или удалить значок,
+               отображаемый как виджет раскрытия рядом с меткой по умолчанию,
+               который обычно представляет собой треугольник.
+            </p>
+            <p>
+               Вы также можете изменить стиль на,
+               <code>display: block</code>
+               чтобы удалить треугольник раскрытия.
+            </p>
+            <br>
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/summary">Ссылка на статью в MDN Web Docs</a>,
          </div>
 
 
@@ -420,11 +477,12 @@
 
 
    </div>
-   
 
 
-   <footer>
-      Нашли ошибку? Есть что добавить? Пулреквесты приветствуются <a href="https://github.com/VipReaL/Semantic-elements-in-HTML-5/blob/main/index.html">https://github.com/VipReaL/Semantic-elements-in-HTML-5</a>
+
+   <footer class="footer">
+      Нашли ошибку? Есть что добавить? Пулреквесты приветствуются <a
+         href="https://github.com/VipReaL/Semantic-elements-in-HTML-5/blob/main/index.html">https://github.com/VipReaL/Semantic-elements-in-HTML-5</a>
    </footer>
 
 </body>

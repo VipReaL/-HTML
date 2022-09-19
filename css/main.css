@@ -28,6 +28,7 @@ img.img_height {
 
 .main {
    font-size: 24px;
+   padding-bottom: 30px;
 }
 
 .main h1 {
@@ -45,4 +46,11 @@ img.img_height {
 
 .main h3 {
    font-size: 36px;
+}
+
+
+
+.footer {
+   padding: 30px 0px 30px 300px;
+   border-top: 1px solid;
 }
